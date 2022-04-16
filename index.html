@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Wordle</title>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="divMain">
+            <h3 id="invalidWordMessage">Not in word list!</h3>
+            <h3 id="correctWordMessage"></h3>
+            <div id="inputWords">
+            </div>
+            <h3 id="guessedMessage">Bravo!</h3>
+            <div>
+                <div>
+                    <button id="keyQ" type="button" onclick="keyPressed('q')">q</button>
+                    <button id="keyW" type="button" onclick="keyPressed('w')">w</button>
+                    <button id="keyE" type="button" onclick="keyPressed('e')">e</button>
+                    <button id="keyR" type="button" onclick="keyPressed('r')">r</button>
+                    <button id="keyT" type="button" onclick="keyPressed('t')">t</button>
+                    <button id="keyY" type="button" onclick="keyPressed('y')">y</button>
+                    <button id="keyU" type="button" onclick="keyPressed('u')">u</button>
+                    <button id="keyI" type="button" onclick="keyPressed('i')">i</button>
+                    <button id="keyO" type="button" onclick="keyPressed('o')">o</button>
+                    <button id="keyP" type="button" onclick="keyPressed('p')">p</button>
+                </div>
+                <div>
+                    <button id="keyA" type="button" onclick="keyPressed('a')">a</button>
+                    <button id="keyS" type="button" onclick="keyPressed('s')">s</button>
+                    <button id="keyD" type="button" onclick="keyPressed('d')">d</button>
+                    <button id="keyF" type="button" onclick="keyPressed('f')">f</button>
+                    <button id="keyG" type="button" onclick="keyPressed('g')">g</button>
+                    <button id="keyH" type="button" onclick="keyPressed('h')">h</button>
+                    <button id="keyJ" type="button" onclick="keyPressed('j')">j</button>
+                    <button id="keyK" type="button" onclick="keyPressed('k')">k</button>
+                    <button id="keyL" type="button" onclick="keyPressed('l')">l</button>
+                </div>
+                <div>
+                    <button type="button" onclick="keyPressedEnter()">enter</button>
+                    <button id="keyZ" type="button" onclick="keyPressed('z')">z</button>
+                    <button id="keyX" type="button" onclick="keyPressed('x')">x</button>
+                    <button id="keyC" type="button" onclick="keyPressed('c')">c</button>
+                    <button id="keyV" type="button" onclick="keyPressed('v')">v</button>
+                    <button id="keyB" type="button" onclick="keyPressed('b')">b</button>
+                    <button id="keyN" type="button" onclick="keyPressed('n')">n</button>
+                    <button id="keyM" type="button" onclick="keyPressed('m')">m</button>
+                    <button type="button" onclick="keyPressedBack()">⬅</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+    
+<style>
+    #divMain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    button {
+        border-style: solid;
+        border-color: black;
+        border-width: 0.1em;
+        font-size: medium;
+        width: 4em;
+        height: 4em;
+    }
+
+    h3 {
+        visibility: collapse;
+    }
+</style>
